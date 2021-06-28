@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MVC_3_1.Models.Order>
+
+@{
+    ViewData["Title"] = "Заказы";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Заказы</title>
+</head>
+<body>
+    <h3>Заказы</h3>
+    <a href="~/Home">Перейти на главную</a>
+    <table class="table-condensed">
+        <tr>
+            <td>Номер заказа</td>
+            <td>Ширина</td>
+            <td>Высота</td>
+            <td>Управление</td>
+            <td>Имя и фамилия покупателя</td>
+            <td>Адрес покупателя</td>
+            <td>E-mail</td>
+            <td>Контактный  телефон покупателя</td>
+            <td>Индекс жалюзи</td>
+           
+
+        </tr>
+        @foreach (var order in Model)
+        {
+    <tr>
+        <td>@order.OrderId</td>
+        <td>@order.Height</td>
+        <td>@order.Width</td>
+        <td>@order.Control</td>
+        <td>@order.Userr</td>
+        <td>@order.Address</td>
+        <td>@order.Email</td>
+        <td>@order.ContactPhone</td>
+        <td>@order.JaluziId</td>
+       
+        <td>
+        </td>
+    </tr>
+        }
+    </table>
+</body>
+</html>

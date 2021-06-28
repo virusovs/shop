@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" >
+Допишемо якісь стилі у файл стилей:
+body {
+    font-size: 14px;
+    font-family: 'Arial', serif;
+    color: #626262;
+    overflow-y: scroll;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #b4ad9e;
+}
+
+    a:hover {
+        color: #898377;
+    }
+
+p {
+    line-height: 1.5rem;
+}
+
+h2, h3 {
+    margin: 1rem 0;
+    font-size: 30px;
+}
+
+hedder .navbar-light {
+    background-color: #fff;
+}
+
+header .navbar-brand {
+    font-family: 'Arial', monospace;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+    header .nav-item a::after {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+        height: 1px;
+        transform: scale(0);
+        transition: all .3s;
+    }
+
+    header .nav-item a:hover::after {
+        transform: scale(1);
+    }
+
+.post-category,
+.link-more {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.post-title a {
+    color: #626262;
+}
+
+.grid-posts {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    .grid-posts .card {
+        border: 0;
+        margin-bottom: 100px;
+    }
+
+    .grid-posts .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .grid-posts .card-img-top {
+        max-height: 350px;
+        border-top-left-radius: calc(.75rem - 1px);
+        border-top-right-radius: calc(.75rem - 1px);
+    }
+
+.Load-more {
+    padding: 1rem 2rem;
+    border-color: #626262;
+    border-radius: 0;
+}
+
+    .Load-more span {
+        display: none;
+    }
+
+footer {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    color: #000;
+}
+
+.footer-left a {
+    color: #000;
+    margin-right: 10px;
+}
+
+.footer-right a {
+    color: #626262;
+    margin-left: 10px;
+}
+
+.tab-content {
+    min-height: calc(100vh - 121px);
+}

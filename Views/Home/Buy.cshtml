@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Оформление заказа";
+}
+<h2>Форма оформления покупки</h2>
+<form method="post" class="form-horizontal" role="form">
+    <input type="hidden" value="@ViewBag.JaluziId" name="JaluziId" />
+    <p>Для оформления покупки заполните следующие поля:</p>
+    <div class="form-group">
+        <label for="Width" class="col-md-2 control-label">Ширина мм.:</label>
+        <div class="col-md-4">
+            <input type="number" name="Width" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Height" class="col-md-2 control-label">Высота мм.:</label>
+
+        <div class="col-md-4">
+            <input type="number" name="Height" class="form-control" />
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="Control" class="col-md-2 control-label">З якої сторони керування R-зправа, L-зліва:</label>
+
+        <div class="col-md-4">
+            <input type="text" name="Control" class="form-control" />
+        </div>
+    </div>
+
+   
+
+    <div class="form-group">
+        <label for="Userr" class="col-md-2 control-label">Имя:</label>
+        <div class="col-md-4">
+            <input type="text" name="Userr" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Address" class="col-md-2 control-label">Адрес:</label>
+        <div class="col-md-4">
+            <input type="text" name="Address" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Email" class="col-md-2 control-label">Email:</label>
+        <div class="col-md-4">
+            <input type="email" name="Email" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Телефон:</label>
+        <div class="col-md-4">
+            <input type="tel" name="ContactPhone" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default"
+                   value="Отправить" />
+        </div>
+    </div>
+</form>
